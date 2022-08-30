@@ -16,19 +16,11 @@ const Beans = ({ noPlane }) => {
   return (
     <div className="container ">
       <div className="bg-icedrip_bg  w-full h-full relative overflow-hidden mt-100">
-        <div className=" w-full h-full  translate-x-32">
+        <div className=" w-full h-full  translate-x-96 max-h-[573px]">
           <img
-            src={
-              america
-                ? "bean/mapame.png "
-                : africa
-                ? "bean/mapafrica.png "
-                : asia
-                ? "bean/mapasia.png "
-                : "bean/map.png "
-            }
+            src="/bean/map.svg "
             alt=""
-            className="w-11/12 h-full  object-cover "
+            className="w-4/5 h-full   object-cover "
           />
         </div>
         <Link to="/beans/america">
@@ -40,7 +32,7 @@ const Beans = ({ noPlane }) => {
             }}
             className={` ${
               america ? "underline underline-offset-4" : ""
-            } absolute america  translate-x-[920%] -translate-y-[1000%] z-[1] font-medium tracking-tight uppercase `}
+            } absolute america left-[42%] top-[56%] z-[1] font-medium tracking-tight uppercase `}
           >
             America
           </span>
@@ -54,7 +46,7 @@ const Beans = ({ noPlane }) => {
             }}
             className={` ${
               africa ? "underline underline-offset-4" : ""
-            } absolute africa  translate-x-[1950%] -translate-y-[750%] z-[1] font-medium tracking-tight uppercase `}
+            } absolute africa  left-[67%] top-[65%] z-[1] font-medium tracking-tight uppercase `}
           >
             Africa
           </span>
@@ -68,7 +60,7 @@ const Beans = ({ noPlane }) => {
             }}
             className={` ${
               asia ? "underline underline-offset-4" : ""
-            } absolute asia  translate-x-[4000%] -translate-y-[1500%] z-[1] font-medium tracking-tight uppercase `}
+            } absolute asia  left-[87%] top-[40%] z-[1] font-medium tracking-tight uppercase `}
           >
             Asia
           </span>
