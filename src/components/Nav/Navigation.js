@@ -247,7 +247,7 @@ export default Navigation;
 const ElementFather = ({ desc, children }) => {
   return (
     <li
-      className={`relative flex flex-col border-b-2 items-center justify-center  px-4 cursor-pointer group  `}
+      className={`relative flex flex-col hover border-b-2 items-center justify-center  px-4 cursor-pointer group  `}
     >
       <p className="text-sm uppercase tracking-widest ">{desc}</p>
       {/* <img
